@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 0, 150, 0.5));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+.player0 {
+    text-align: center;
+    padding: 5.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.6;
+}
+
+.player1 {
+    text-align: center;
+    padding: 5.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.6;
+}
+
+.player0 > h4,
+.player1 > h4 {
+    font-size: 2rem;
+}
+
+.player0 > p,
+.player1 > p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.current0, .current1 {
+    margin-top: 10rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 0.5rem;
+}
+
+.current0 > h4,
+.current1 > h4 {
+    font-size: 1.25rem;
+}
+
+.bg-player {
+    opacity: 1;
+}
+
+.play {
+    width: 22vw;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+img {
+    
+}
+
+.bottom {
+    position: absolute;
+    width: 22vw;
+    top: 48.5vh;
+}
+
+.roll {
+      
+}
+
+.hold, img {
+    margin-top: 1rem;
+}
+
+.new-game, .roll, .hold {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.new-game > span, .roll > span, .hold > span {
+    margin-right: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.win {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.win > h4, .win> p {
+    color: red;
+}
